@@ -15,7 +15,7 @@ import ProductsList from '@/components/Product/ProductsList.vue';
 
 const { state: products, isLoading } = useAsyncState(
   axios
-    .get('http://localhost:8000/products')
+    .get('/products.json')
     .then(t => t.data),
   [],
 )
